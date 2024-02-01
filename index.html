@@ -39,28 +39,76 @@ layout: none
                 </div>
             </div>
         </section>
+<!-- Hitre povezave -->
+
         <section class="bg-light pb-5">
             <div class="container">
-                <h2 class="no-anchor text-center mb-3">Hitre povezave</h2>
-                {%- assign sidebar = site.data.povezave[page.sidebar] %}
+                <h2 class="no-anchor text-center mb-3">Hitre povezave: </h2>
+                <!-- {%- assign sidebar = site.data.sidebars[page.sidebar] %} -->
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
-                    {%- for folder in sidebar.subitems %}
+
+                    <!-- RDMKIT -->
                     <div class="col">
-                            <div class="card bg-white h-100">
-                                <img src="{{folder.image_url | relative_url}}" class="card-img-top h-icon-5 mx-auto" alt="{{folder.title}} icon">
-                                <div class="card-body text-center">
-                                    <a href="{{ folder.url | relative_url }}" class="stretched-link">
-                                        <h3 class="card-title no-anchor text-primary">{{folder.title}}</h3>
-                                    </a>
-                                    <p class="card-text">{{folder.description}}</p>
-                                </div>
+                        <div class="card border bg-white h-100">
+                            <img src="assets/img/section-icons/RDMkit_logo.svg" class="card-img-top h-icon-5 mx-auto"
+                                alt="RDMkit logo">
+                            <div class="card-body text-center">
+                                <a href="https://rdmkit.elixir-europe.org/" target="_blank" class="stretched-link">
+                                    <h3 class="card-title no-anchor text-primary"> RDMkit</h3>
+                                </a>
+                                <p class="card-text"> General life science best practices and guidelines from ELIXIR. Recommended by RCN, ERC and Horizion Europe</p>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    {%- endfor %}
+                    <!-- RDMkit NO pages -->
+                    <div class="col">
+                        <div class="card border bg-white h-100">
+                            <img src="assets/img/section-icons/flag_no.svg" class="card-img-top h-icon-5 mx-auto"
+                                alt="norwegian flag with RDMkit logo">
+                            <div class="card-body text-center">
+                                <a href="https://rdmkit.elixir-europe.org/no_resources" target="_blank" class="stretched-link">
+                                    <h3 class="card-title no-anchor text-primary"> Norwegian resources in RDMkit</h3>
+                                </a>
+                                <p class="card-text"> Resources, policies and laws relevant for life science data management in Norway in RDMkit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cheatsheets -->
+                    <div class="col">
+                        <div class="card border bg-white h-100">
+                            <img src="assets/img/section-icons/cheat_sheets.svg" class="card-img-top h-icon-5 mx-auto"
+                                alt="cheat sheet icon">
+                            <div class="card-body text-center">
+                                <a href="cheat_sheets" class="stretched-link">
+                                    <h3 class="card-title no-anchor text-primary"> Cheat sheets</h3>
+                                </a>
+                                <p class="card-text"> Data management cheat sheets from Norwegian life science research infrastructures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- openscience.no -->
+                    <div class="col">
+                        <div class="card border bg-white h-100">
+                            <img src="assets/img/section-icons/openscience_no.svg" class="card-img-top h-icon-5 mx-auto"
+                                alt="openscience logo">
+                            <div class="card-body text-center">
+                                <a href="https://www.openscience.no/" target="_blank" class="stretched-link">
+                                    <h3 class="card-title no-anchor text-primary"> openscience.no</h3>
+                                </a>
+                                <p class="card-text"> General, generic information on open science and open data (in Norway), maintained by SIKT</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
         <section class="py-5">
             <div class="container">
                 <div class="row">
