@@ -1,3 +1,9 @@
+{% for news_item in site.data.news %}
+  <h2>Novice</h2>
+  <p>{{ news_item.date | date: "%B %d, %Y" }}</p>
+  <p>{{ news_item.content }}</p>
+{% endfor %}
+
 - name: 
   date: 
   description: 
