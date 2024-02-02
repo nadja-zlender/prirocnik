@@ -1,5 +1,3 @@
-<h2>{{ site.news_title }}</h2>
-
 - name: 
   date: 
   description: 
